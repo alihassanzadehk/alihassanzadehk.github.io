@@ -1,23 +1,54 @@
+/* style.css */
 
 body {
     font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #ffffff;
     color: #333;
+    max-width: 100%;
 }
+
 header {
     background: #f4f4f4;
-    padding: 1em;
+    padding: 1.5em;
     text-align: center;
 }
+
+nav {
+    margin-top: 10px;
+}
+
 nav a {
     margin: 0 1em;
     text-decoration: none;
     color: #0366d6;
+    font-weight: 500;
 }
+
 main {
     padding: 2em;
-    max-width: 800px;
+    max-width: 100%;
+    width: 90%;
     margin: auto;
+    box-sizing: border-box;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
 }
